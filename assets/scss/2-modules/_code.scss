@@ -1,0 +1,62 @@
+
+.code {
+  color: $color-code-default;
+  background-color: #171a22;
+  border-radius: 5px;
+  margin-right: .2rem;
+  padding: .25rem 1rem;
+}
+
+.code__bash::before {
+  color: $color-code-yellow;
+  content: '$';
+  margin-right: .75rem;
+}
+
+.code--blue {
+  color: #87cefa;
+}
+
+pre {
+  background-color: $color-code-bg;
+  border-radius: 8px;
+  & code {
+    color: $color-code-default;
+    font-family: $font-family-code !important;
+    font-size: 1rem;
+  }
+}
+
+pre.highlight {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.c1,
+span.p {
+  color: $color-white-off-white;
+}
+
+.kd {
+  color: $color-magenta-light;
+}
+.nx {
+  color: $color-yellow-light;
+}
+.dl,
+.s1 {
+  color: $color-green-light;
+}
+
+.language-ruby span.o {
+  color: $color-code-white;
+}
+
+.se {
+  color: $color-code-red;
+}
+
+.sr {
+  color: $color-code-blue;
+}

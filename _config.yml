@@ -1,0 +1,44 @@
+#### ANY CHANGE TO THIS FILE REQUIRES THE BUILD-COMMAND TO BE RESTARTED ####
+title: "TODO PWA"
+public-url: "https://subdomain.kcc.edu"
+url: 'URL is needed for robots.txt to work properly' ## NO TRAILING SLASHES!!/<--nope
+port: 3002
+# contact_phone: 815-802-8888
+timezone: America/Chicago
+google-tag_key: Google Tag Manager key goes here
+permalink: pretty
+description: > # this means to ignore newlines until "baseurl:"
+# Delete this comment and place description on this line
+baseurl: "/" # the subpath of your site, e.g. /blog
+#include:
+#  - "_pages"
+#   - "_posts"
+## include future posts? (true or false)
+future: true
+## Build settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+collections:
+  accordions:
+    people: false
+
+exclude:
+  - "node_modules"
+  - "npm-debug.log"
+  - "package.json"
+  - "package-lock.json"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE.txt"
+  - "webpack.config.js"
+  - "*.gem"
+  - "*.gemspec"
+  - "ruby-version.txt"
+  - "buildtools/"
+  - "postcss.config.js"
+  - "docs/"
+
+uploads_dir: "uploads/" # specifies the default uploads directory for uploads in CloudCannon

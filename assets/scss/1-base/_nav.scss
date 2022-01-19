@@ -1,0 +1,38 @@
+
+.nav {
+  &--fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+  &--border-btm {
+    border-bottom-color: rgba(0,0,0,.25);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+  }
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  background-color: rgba(0,0,0,.5);
+  bottom: .25rem;
+  border-top-width: .125rem;
+  content: '';
+  display: block;
+  height: .25rem;
+  margin-left: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s, transform 0.3s;
+  width: calc(100% - 1rem); // The `- 1.8rem` in `calc (100% - 1.8rem)` offsets the padding-left/right: .5rem on the links
+}
+
+.nav-link.active::after {
+  opacity: 1;
+  transform: translateY(-0.2em);
+}

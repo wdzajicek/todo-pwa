@@ -1,0 +1,28 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+#svgFour {
+  transform-origin: 747px 383.4px;
+}
+
+.svg {
+  &__404 {
+    fill: $white;
+    overflow: visible;
+  }
+  &__four {
+    transform: rotate(180deg);
+  }
+  &__four--animate {
+    animation-name: rotate;
+    animation-delay: 500ms;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+  }
+}

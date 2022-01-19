@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktodo_pwa=self.webpackChunktodo_pwa||[]).push([[704],{704:function(e,t,n){n.r(t);const o=document.getElementById("copyrightYear");t.default=function(){const e=new Date;o.innerHTML=e.getFullYear()}}}]);

@@ -1,0 +1,52 @@
+### Gem/Bundler stuffs to ignore ###
+*.gem
+.bundle
+
+## Prevent CloudCannon Errors
+.ruby-version
+
+### Ignore the Gemfile to keep it out of cloudcannon ###
+#Gemfile
+Gemfile.lock
+
+### General Apple things to ignore ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### Files that might appear in the root of a volume ###
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+### Directories potentially created on remote AFP share ###
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Ignore jekyll _site build folder
+_site
+
+# Don't push these--that would be bad
+.sass-cache
+.jekyll-metadata
+
+### Nodejs Stuffs
+node_modules/
+# Avoid win/mac/linux discrepencies
+package-lock.json
+
+# Ignore gem lock to avoid mac/windows discrepencies
+Gemfile.lock
+
+# Jekyll 4's caching dir
+.jekyll-cache/

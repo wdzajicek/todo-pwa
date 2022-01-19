@@ -1,0 +1,11 @@
+<header class="header">
+  <div class="header--bg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 class="{% if page.url != '/404.html' %}h1--header{% else %}h1--header--error{% endif %} text-center">{% unless page.title_svg %}{{ site.title }}{% else %}{{ page.title_svg }}{% endunless %}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

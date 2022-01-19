@@ -1,0 +1,25 @@
+$font-family-main: 'Roboto', sans-serif;
+$font-family-code: 'Roboto Mono', monospace;
+
+// Colors
+$color-white: #fff;
+$color-green-pure: #0f0;
+$color-green-light: #90ee90;
+$color-yellow-light: #ffff97;
+$color-blue-light: #87cefa;
+$color-white-off-white: #f5f5f5;
+$color-magenta-light: #fe91fe;
+$color-red-light: #e98282;
+$color-blue-dark: #171a22;
+
+$white: $color-white;
+
+// Colors used for code highlighting
+$color-code-bg: $color-blue-dark;
+$color-code-default: $color-green-pure;
+$color-code-green: $color-green-pure;
+$color-code-yellow: $color-yellow-light;
+$color-code-blue: $color-blue-light;
+$color-code-white: $color-white-off-white;
+$color-code-magenta: $color-magenta-light;
+$color-code-red: $color-red-light;

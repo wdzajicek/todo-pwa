@@ -1,0 +1,10 @@
+
+.todo {
+  &__notifications {
+    background-color: #222b3e;
+    border-radius: 5px;
+  }
+  &__ul li {
+    color: lightgreen;
+  }
+}

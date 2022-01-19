@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktodo_pwa=self.webpackChunktodo_pwa||[]).push([[922],{922:function(s,t,e){e.r(t);const o=document.getElementById("svgFour");t.default=function(){o.classList.add("svg__four--animate"),window.setTimeout((()=>{o.classList.remove("svg__four--animate"),o.classList.add("svg__four")}),1e3)}}}]);

@@ -1,0 +1,12 @@
+
+.header {
+  min-height: 80vh;
+  overflow: hidden;
+  &--bg {
+    background-image: url('../../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 80vh;
+  }
+}
