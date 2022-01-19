@@ -3,6 +3,15 @@
 
 -----
 
+## Overview
+
+A simple todo app as a progressive web app.
+
+- Bootstrap 5 for layout and styling
+- Create/delete tasks
+- TODO list is cached using indexedDB API
+- Service worker provides near-instant load times and  download/add-to-home capabilities
+
 ## Installation
 
 ```bash

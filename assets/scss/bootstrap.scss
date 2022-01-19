@@ -4,6 +4,9 @@
 @import '../../node_modules/bootstrap/scss/functions';
 
 // 2. Include any default variable overrides here
+$card-border-color: rgba(0,0,0,.25);
+$card-border-width: 2px;
+$card-border-radius: .75rem;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import '../../node_modules/bootstrap/scss/variables';
