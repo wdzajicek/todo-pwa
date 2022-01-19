@@ -11,7 +11,7 @@ self.addEventListener('install', (event) => {
     .then((obj) => {
       const hash = obj.hash;
 
-      caches.open('todo-pwa-v3').then((cache) => {
+      caches.open('todo-pwa-v4').then((cache) => {
         return cache.addAll([
           '/todo-pwa/index.html',
           '/todo-pwa/404.html',
@@ -23,13 +23,13 @@ self.addEventListener('install', (event) => {
           `/todo-pwa/assets/js/dist/314.${hash}.js`,
           `/todo-pwa/assets/js/dist/410.${hash}.js`,
           `/todo-pwa/assets/js/dist/509.${hash}.js`,
-          `/todo-pwa/assets/js/dist/544.${hash}.js`,
+          `/todo-pwa/assets/js/dist/644.${hash}.js`,
           `/todo-pwa/assets/js/dist/658.${hash}.js`,
           `/todo-pwa/assets/js/dist/671.${hash}.js`,
           `/todo-pwa/assets/js/dist/704.${hash}.js`,
           `/todo-pwa/assets/js/dist/823.${hash}.js`,
           `/todo-pwa/assets/js/dist/922.${hash}.js`,
-          `/todo-pwa/assets/js/dist/939.${hash}.js`,
+          `/todo-pwa/assets/js/dist/936.${hash}.js`,
         ]);
       });
     })
@@ -47,7 +47,7 @@ self.addEventListener('fetch', (event) => {
       return resp || fetch(event.request).then((response) => {
         let responseClone = response.clone();
 
-        caches.open('todo-pwa-v3').then((cache) => {
+        caches.open('todo-pwa-v4').then((cache) => {
           cache.put(event.request, responseClone);
           return response;
         }).catch(err => console.error('Not found in cache and no network', err))
@@ -58,7 +58,7 @@ self.addEventListener('fetch', (event) => {
 
 // Activate event is used to delete old caches once a new service worker is activated:
 self.addEventListener('activate', (event) => {
-  const cacheKeeplist = ['todo-pwa-v3']; // Array of cache versions to keep
+  const cacheKeeplist = ['todo-pwa-v4']; // Array of cache versions to keep
 
   event.waitUntil(
     caches.keys().then((keyList) => {
