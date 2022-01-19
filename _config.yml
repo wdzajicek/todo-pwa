@@ -1,7 +1,7 @@
 #### ANY CHANGE TO THIS FILE REQUIRES THE BUILD-COMMAND TO BE RESTARTED ####
 title: "TODO PWA"
-public-url: "https://subdomain.kcc.edu"
-url: 'URL is needed for robots.txt to work properly' ## NO TRAILING SLASHES!!/<--nope
+public-url: https://wdzajicek.github.io/todo-pwa
+url: https://wdzajicek.github.io/todo-pwa ## NO TRAILING SLASHES!!/<--nope
 port: 3002
 # contact_phone: 815-802-8888
 timezone: America/Chicago

@@ -15,8 +15,8 @@ self.addEventListener('install', (event) => {
         return cache.addAll([
           '/todo-pwa/index.html',
           '/todo-pwa/404.html',
-          '/todo-pwa/favicon.ico',
           '/todo-pwa/assets/img/header-bg.jpg',
+          '/todo-pwa/favicon.ico',
           `/todo-pwa/assets/js/dist/main.${hash}.js`,
           `/todo-pwa/assets/js/dist/main.${hash}.css`,
           `/todo-pwa/assets/js/dist/29.${hash}.js`,

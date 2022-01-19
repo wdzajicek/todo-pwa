@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-
+Sitemap: https://wdzajicek.github.io/todo-pwa/sitemap.xml

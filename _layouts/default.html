@@ -10,16 +10,16 @@
   <!-- <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content=""> -->
-  <meta property="og:image" content="{{ site.baseurl }}assets/img/header-bg.jpg">
+  <meta property="og:image" content="{% if jekyll.environment == 'ghPages' %}/todo-pwa/{% else %}{{ site.baseurl }}{% endif %}assets/img/header-bg.jpg">
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="manifest" href="{{ site.baseurl }}site.webmanifest">
-  <link rel="apple-touch-icon" href="{{ site.baseurl }}icon.png">
+  <link rel="manifest" href="{% if jekyll.environment == 'ghPages' %}/todo-pwa/{% else %}{{ site.baseurl }}{% endif %}site.webmanifest">
+  <link rel="apple-touch-icon" href="{% if jekyll.environment == 'ghPages' %}/todo-pwa/{% else %}{{ site.baseurl }}{% endif %}icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{% if jekyll.environment == 'ghPages' %}/todo-pwa/{% else %}{{ site.baseurl }}{% endif %}favicon.ico" type="image/x-icon">
   <!-- Link to the main custom-stylesheet -->
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/js/dist/main.{{ site.data.hash }}.css">
+  <link rel="stylesheet" href="{% if jekyll.environment == 'ghPages' %}/todo-pwa/{% else %}{{ site.baseurl }}{% endif %}assets/js/dist/main.{{ site.data.hash }}.css">
 
   <meta name="theme-color" content="#29abe2">
 </head>
@@ -29,7 +29,7 @@
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
-  <script src="{{ site.baseurl }}assets/js/dist/main.{{ site.data.hash }}.js"></script>
+  <script src="{% if jekyll.environment == 'ghPages' %}/todo-pwa/{% else %}{{ site.baseurl }}{% endif %}assets/js/dist/main.{{ site.data.hash }}.js"></script>
 </body>
 
 </html>
