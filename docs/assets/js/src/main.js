@@ -33,9 +33,7 @@ window.addEventListener('load', () => {
     }).then(() => {
       if (document.getElementById('svgFour'))
         return loadSimpleModule('errorPageAnimation');
-    })
-    .then(() => window.location.pathname == '/404.html' ? loadSimpleModule('errorPageAnimation') : null )
-     .then(() => {
+    }).then(() => {
        if ('serviceWorker' in navigator) {
          import('./registerServiceWorker.js').then(({default: registerServiceWorker}) => {
            registerServiceWorker();
