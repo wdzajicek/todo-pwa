@@ -9,9 +9,9 @@ layout: null
   "theme_color": "#b8babc",
   "description": "A simple Bootstrap 5 PWA",
   "icons": [{
-      "src": "{{ site.baseurl }}icon.png",
+      "src": "/todo-pwa/icon.png",
       "sizes": "192x192",
       "type": "image/png"
   }],
-  "start_url": "{{ site.baseurl }}"
+  "start_url": "/todo-pwa/"
 }

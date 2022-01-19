@@ -41,7 +41,7 @@ window.addEventListener('load', () => {
     //    }
      })
     .then(() => {
-      if (window.location.pathname == '/') {
+      if (document.querySelector('form#Form')) {
         return loadSimpleModule('todo');
       }
     })
