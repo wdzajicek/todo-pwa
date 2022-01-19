@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktodo_pwa=self.webpackChunktodo_pwa||[]).push([[692],{692:function(e,o,t){t.r(o),o.default=function(){navigator.serviceWorker.register("/todo-pwa/serviceworker.js",{scope:"/todo-pwa/"}).then((e=>{console.log("Registration succeeded. Scope is "+e.scope)})).catch((e=>{console.log("Registration failed with "+e)}))}}}]);
