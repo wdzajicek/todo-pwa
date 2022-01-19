@@ -15,7 +15,7 @@ A simple todo app as a progressive web app.
 ## Installation
 
 ```bash
-git clone <git-clone-method>
+git clone git@github.com:wdzajicek/todo-pwa.git
 cd todo-pwa
 npm i && bundle i
 ```
