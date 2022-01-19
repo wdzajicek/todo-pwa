@@ -1,0 +1,249 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>TODO PWA | Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content=""> -->
+  <meta property="og:image" content="/assets/img/header-bg.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="/assets/js/dist/main.faa9e91390ff799255dd.css">
+
+  <meta name="theme-color" content="#29abe2">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light nav--border-btm nav--fixed">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">WZ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li></ul></div>
+  </div>
+</nav>
+  <header class="header">
+  <div class="header--bg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 class="h1--header text-center">TODO PWA</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="container">
+  <div class="row">
+    <div class="col-12 mt-5">
+      <div class="card card-body px-3 px-lg-5 form--width">
+        <h2 class="h2 h2--todo text-center mb-4">LIST</h2>
+        <div id="task-list" class="card card-body mb-3 bg--black-a125">
+          <div class="card mb-3">
+            <div class="card-header">
+              <h3 class="h3">Task title</h3>
+            </div>
+            <div class="card-body">
+              <p class="p">Description of task</p>
+            </div>  
+          </div>
+          <div class="card mb-3">
+            <div class="card-header">
+              <h3 class="h3">Task title</h3>
+            </div>
+            <div class="card-body">
+              <p class="p">Description of task</p>
+            </div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="h3">App Status</h3>
+          </div>
+          <div class="card-body">
+            <div class="my-3 p-2 todo__notifications">
+              <button type="button" id="clearNotifications" class="btn btn-outline-secondary mb-3 buttons--secondary">Clear App Status</button>
+              <ul class="todo__ul" id="notifications">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mt-4 mb-5">
+      <div class="card card-body py-4 px-3 px-lg-5 form--width">
+        <div class="form__wrapper">
+          <h2 class="h2 h2--todo text-center mb-4">TODO</h2>
+          <form id="Form" class="form" action="/index.html">
+            <div class="form-floating mb-4">
+              <input type="text" class="form-control" id="title" placeholder="My task title">
+              <label for="title">Title of task</label>
+            </div>
+            <div class="row mb-4">
+              <div class="col-4">
+                <div class="form-floating">
+                  <select class="form-select" id="yearSelect" aria-label="Floating label select example">
+                    <option>Select a year</option>
+                    
+                    <option value="2021">2021</option>
+                    <option selected value="2022">2022</option>
+                    
+                    <option value="2023">2023</option>
+                    
+                    <option value="2024">2024</option>
+                    
+                    <option value="2025">2025</option>
+                    
+                  </select>
+                  <label for="yearSelect">Year</label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-floating">
+                  <select class="form-select" id="monthSelect" aria-label="Floating label select example">
+                    <option>Select a month</option>
+                    
+                    
+                    
+                    <option selected value="1">1</option>
+                    
+                    <option  value="2">2</option>
+                    
+                    <option  value="3">3</option>
+                    
+                    <option  value="4">4</option>
+                    
+                    <option  value="5">5</option>
+                    
+                    <option  value="6">6</option>
+                    
+                    <option  value="7">7</option>
+                    
+                    <option  value="8">8</option>
+                    
+                    <option  value="9">9</option>
+                    
+                    <option  value="10">10</option>
+                    
+                    <option  value="11">11</option>
+                    
+                    <option  value="12">12</option>
+                    
+                  </select>
+                  <label for="monthSelect">Month</label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-floating">
+                  <select class="form-select" id="daySelect" aria-label="Floating label select example">
+                    <option>Select a month</option>
+                    
+                    
+                    <option  value="1">1</option>
+                    
+                    <option  value="2">2</option>
+                    
+                    <option  value="3">3</option>
+                    
+                    <option  value="4">4</option>
+                    
+                    <option  value="5">5</option>
+                    
+                    <option  value="6">6</option>
+                    
+                    <option  value="7">7</option>
+                    
+                    <option  value="8">8</option>
+                    
+                    <option  value="9">9</option>
+                    
+                    <option  value="10">10</option>
+                    
+                    <option  value="11">11</option>
+                    
+                    <option  value="12">12</option>
+                    
+                    <option  value="13">13</option>
+                    
+                    <option  value="14">14</option>
+                    
+                    <option  value="15">15</option>
+                    
+                    <option  value="16">16</option>
+                    
+                    <option  value="17">17</option>
+                    
+                    <option selected value="18">18</option>
+                    
+                    <option  value="19">19</option>
+                    
+                    <option  value="20">20</option>
+                    
+                    <option  value="21">21</option>
+                    
+                    <option  value="22">22</option>
+                    
+                    <option  value="23">23</option>
+                    
+                    <option  value="24">24</option>
+                    
+                    <option  value="25">25</option>
+                    
+                    <option  value="26">26</option>
+                    
+                    <option  value="27">27</option>
+                    
+                    <option  value="28">28</option>
+                    
+                    <option  value="29">29</option>
+                    
+                    <option  value="30">30</option>
+                    
+                    <option  value="31">31</option>
+                    
+                  </select>
+                  <label for="daySelect">Day</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-floating mb-4">
+              <textarea class="form-control" placeholder="Create details for task" id="details" style="height: 100px"></textarea>
+              <label for="details">Task details</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" id="submit" class="btn btn-outline-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer class="footer bg-light">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <p class="mb-0">&copy;&nbsp;<span id="copyrightYear">1988</span> Wesley Zajicek</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="/assets/js/dist/main.faa9e91390ff799255dd.js"></script>
+</body>
+
+</html>
