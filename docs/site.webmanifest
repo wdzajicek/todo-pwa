@@ -6,7 +6,7 @@
   "theme_color": "#b8babc",
   "description": "A simple Bootstrap 5 PWA",
   "icons": [{
-      "src": "/icon.png",
+      "src": "/todo-pwa/icon.png",
       "sizes": "192x192",
       "type": "image/png"
   }],
