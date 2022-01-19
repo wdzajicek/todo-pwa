@@ -24,13 +24,13 @@ self.addEventListener('install', (event) => {
           `/todo-pwa/assets/js/dist/314.${hash}.js`,
           `/todo-pwa/assets/js/dist/410.${hash}.js`,
           `/todo-pwa/assets/js/dist/509.${hash}.js`,
-          `/todo-pwa/assets/js/dist/544.${hash}.js`,
+          `/todo-pwa/assets/js/dist/644.${hash}.js`,
           `/todo-pwa/assets/js/dist/658.${hash}.js`,
           `/todo-pwa/assets/js/dist/671.${hash}.js`,
           `/todo-pwa/assets/js/dist/704.${hash}.js`,
           `/todo-pwa/assets/js/dist/823.${hash}.js`,
           `/todo-pwa/assets/js/dist/922.${hash}.js`,
-          `/todo-pwa/assets/js/dist/939.${hash}.js`,
+          `/todo-pwa/assets/js/dist/936.${hash}.js`,
         ]);
       });
     })
